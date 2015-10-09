@@ -1,4 +1,4 @@
-ColourLovers Live is an exploration of british spelling and intended to keep software engineers familiar with the latest trends in colour palettes.
+ColourLovers Live is an exploration of british spelling and intended to keep software engineers familiar with the latest trends in colour palettes. 🎨
 
 To be clear, this is not a complete or comprehensive spec, let me know if anything's unclear and we'll get it hammered out.
 
