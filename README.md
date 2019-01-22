@@ -8,7 +8,7 @@ Really this just a quick toy project using roughly TenantBase's development stac
 
 The actual mechanics shouldn't be too complicated—hit ColourLovers.com's API and display it nicely with some responsive behavior. Here's a mockup of the version for large screens:
 
-![Desktop Mockup](mockups/ColourLovers Live Desktop.png)
+![Desktop Mockup](mockups/ColourLovers%20Live%20Desktop.png)
 
 ### Behavior
 
@@ -18,7 +18,7 @@ The page should refresh the data every minute, so we see the latest palettes.
 
 In terms of mobile/responsive behavior, I've also included a mockup of a mobile version to be implemented using standard bootstrap responsive behavior:
 
-![Mobile Mockup](mockups/ColourLovers Live Mobile.png)
+![Mobile Mockup](mockups/ColourLovers%20Live%20Mobile.png)
 
 BTW the font is Lato. I've included PSDs in the mockups folder if need 'em to dig further into graphic design details.
 
