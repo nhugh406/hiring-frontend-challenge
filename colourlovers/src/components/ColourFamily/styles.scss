@@ -1,0 +1,35 @@
+.card {
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 16px;
+  & .color-block {
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-column-end: span 2;
+  }
+  & .details {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(min-content, max-content));
+    grid-gap: 16px;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+  }
+  & .title {
+    font-size: 2em;
+  }
+  & .subTitle {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  & .buttonSection {
+    background: rgb(28, 118, 174);
+    border-radius: 6px;
+    padding: 10px 20px;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    display: grid;
+    grid-gap: 16px;
+  }
+}
