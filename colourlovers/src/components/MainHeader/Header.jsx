@@ -1,9 +1,4 @@
-import React, {
-  forwardRef,
-  useRef,
-  useImperativeHandle,
-  useState,
-} from 'react';
+import React, { forwardRef, useImperativeHandle, useState } from 'react';
 import './Styles.scss';
 const Header = forwardRef((props, ref) => {
   const time = () => {

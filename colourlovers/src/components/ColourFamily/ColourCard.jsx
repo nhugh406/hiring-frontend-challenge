@@ -1,6 +1,5 @@
 import React from 'react';
 import { array, string, number } from 'prop-types';
-import ColourBlock from '../ColourBlock/ColourBlock';
 import './styles.scss';
 
 const propTypes = {
