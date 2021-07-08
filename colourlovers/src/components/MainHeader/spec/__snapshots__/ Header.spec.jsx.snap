@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Colour Family Component Tests should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="main-header"
+  >
+    <h1>
+      Colour Lovers. 
+      <span
+        class="bold-text"
+      >
+        Live.
+      </span>
+    </h1>
+    <h3
+      class="update-timer"
+    >
+      Last Updated at 
+    </h3>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Colour Family Component Tests should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="card"
+  >
+    <div
+      class="details"
+    >
+      <div
+        class="subsection"
+      >
+        <div
+          class="title"
+        >
+          Giant Goldfish
+        </div>
+        <div
+          class="subTitle"
+        >
+          by manekineko at 2007-07-03 10:42:02
+        </div>
+      </div>
+      <div
+        class="buttonSection"
+      >
+        <div>
+          1087457 views
+        </div>
+        <div>
+          12107 votes
+        </div>
+      </div>
+    </div>
+    <div
+      class="color-block"
+    >
+      <div
+        style="background: rgb(105, 210, 231);"
+      />
+      <div
+        style="background: rgb(167, 219, 216);"
+      />
+      <div
+        style="background: rgb(224, 228, 204);"
+      />
+      <div
+        style="background: rgb(243, 134, 48);"
+      />
+      <div
+        style="background: rgb(250, 105, 0);"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
