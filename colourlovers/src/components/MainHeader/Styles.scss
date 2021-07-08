@@ -1,0 +1,19 @@
+.main-header {
+  display: block;
+  padding: 20px 0;
+  & h1 {
+    font-weight: 300;
+    font-size: 4em;
+    & .bold-text {
+      font-weight: 500;
+    }
+  }
+  & .update-timer {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0;
+    padding: 0px 30px;
+    text-align: right;
+  }
+}

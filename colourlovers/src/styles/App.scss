@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+$small: 600px;
+$medium: 900px;
+
+body {
+  background: #1e87f0;
+}
+
+.wrapper {
+  background-color: #1e87f0;
+  color: #fff;
+}
+
+.main {
+  font-family: 'Lato', sans-serif;
+  padding: 0px 30px 30px;
+  max-width: 1136px;
+  margin: auto;
+  & .card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    @media screen and (max-width: $medium) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
