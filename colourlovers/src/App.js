@@ -2,10 +2,10 @@ import React, { useEffect, useState, useRef } from 'react';
 import './styles/App.scss';
 import '@animxyz/core';
 import { XyzTransition, XyzTransitionGroup } from '@animxyz/react';
+import Loader from 'react-loader-spinner';
 
 import Header from './components/MainHeader/Header';
 import ColourCard from './components/ColourFamily/ColourCard';
-import Loader from './components/Loader/Loader';
 
 const App = () => {
   const [colours, setColours] = useState([]);
@@ -50,7 +50,9 @@ const App = () => {
             </XyzTransitionGroup>
           </div>
         ) : (
-          <Loader />
+          <div className="loader">
+            <Loader type="Puff" color="#00BFFF" height={150} width={150} />
+          </div>
         )}
       </XyzTransition>
     </div>
