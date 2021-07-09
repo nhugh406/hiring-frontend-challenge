@@ -10,6 +10,7 @@ import Header from './components/MainHeader/Header';
 const App = () => {
   const [colours, setColours] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [refreshTime, setRefreshTime] = useState(60000);
 
   const getColours = () => {
     timeUpdater.current.setLoadingStatus(true);
@@ -22,17 +23,16 @@ const App = () => {
         timeUpdater.current.setLoadingStatus(false);
       });
   };
-  const MINUTE_MS = 60000;
   const timeUpdater = useRef();
 
   useEffect(() => {
     getColours();
     const interval = setInterval(() => {
       getColours();
-    }, MINUTE_MS);
+    }, refreshTime);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [refreshTime]);
   return (
     <div className="wrapper">
       <div className="main">
@@ -40,6 +40,7 @@ const App = () => {
         <XyzTransitionGroup xyz="fade">
           {loading ? (
             <Loading
+              key="loading"
               overlay
               textDescription="Loading"
               height={150}
