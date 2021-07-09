@@ -12,12 +12,14 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   const getColours = () => {
+    timeUpdater.current.setLoadingStatus(true);
     fetch('https://www.colourlovers.com/api/palettes/top?format=json')
       .then((response) => response.json())
       .then((data) => {
         setColours(data);
         setLoading(false);
         timeUpdater.current.updateData();
+        timeUpdater.current.setLoadingStatus(false);
       });
   };
   const MINUTE_MS = 60000;

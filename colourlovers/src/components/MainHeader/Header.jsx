@@ -17,6 +17,9 @@ const Header = forwardRef((props, ref) => {
     updateData() {
       time();
     },
+    setLoadingStatus(value) {
+      setLoading(value);
+    },
   }));
 
   return (
