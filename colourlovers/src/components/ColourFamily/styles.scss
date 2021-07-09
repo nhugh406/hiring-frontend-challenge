@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 16px;
-  & .color-block {
+  & .colorBlock {
     grid-template-columns: repeat(5, 1fr);
     display: grid;
     grid-column-end: span 2;
@@ -25,11 +25,18 @@
     font-weight: 400;
   }
   & .buttonSection {
-    background: rgb(28, 118, 174);
-    border-radius: 6px;
-    padding: 10px 20px;
     grid-template-columns: repeat(2, minmax(min-content, max-content));
     display: grid;
-    grid-gap: 16px;
+    grid-gap: 0;
+    :first-child {
+      background: rgb(28, 118, 174);
+      border-radius: 6px 0px 0px 6px;
+      padding: 10px 20px;
+    }
+    :nth-child(2) {
+      background: rgb(28, 118, 174);
+      border-radius: 0px 6px 6px 0px;
+      padding: 10px 20px;
+    }
   }
 }

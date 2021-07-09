@@ -23,11 +23,11 @@ const Header = forwardRef((props, ref) => {
   }));
 
   return (
-    <div className="main-header">
+    <div className="mainHeader">
       <h1>
-        Colour Lovers. <span className="bold-text">Live.</span>
+        Colour Lovers. <span className="boldText">Live.</span>
       </h1>
-      <h3 className="update-timer">
+      <h3 className="updateTimer">
         Last Updated at {updateTime}
         {loading && <Loading type="Puff" />}
       </h3>

@@ -34,7 +34,7 @@ exports[`Colour Family Component Tests should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="color-block"
+      class="colorBlock"
     >
       <div
         style="background: rgb(105, 210, 231);"

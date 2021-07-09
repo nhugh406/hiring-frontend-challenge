@@ -3,18 +3,18 @@
 exports[`Colour Family Component Tests should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="main-header"
+    class="mainHeader"
   >
     <h1>
       Colour Lovers. 
       <span
-        class="bold-text"
+        class="boldText"
       >
         Live.
       </span>
     </h1>
     <h3
-      class="update-timer"
+      class="updateTimer"
     >
       Last Updated at 
     </h3>

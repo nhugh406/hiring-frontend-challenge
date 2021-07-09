@@ -1,14 +1,14 @@
-.main-header {
+.mainHeader {
   display: block;
   padding: 20px 0;
   & h1 {
     font-weight: 300;
     font-size: 4em;
-    & .bold-text {
+    & .boldText {
       font-weight: 500;
     }
   }
-  & .update-timer {
+  & .updateTimer {
     position: absolute;
     top: 10px;
     left: 0px;

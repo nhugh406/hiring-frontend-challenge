@@ -11,7 +11,7 @@ const ColourArea = ({ colours }) => {
   return (
     <XyzTransitionGroup
       appear
-      className="card-section"
+      className="cardSection"
       xyz="fade small out-down out-rotate-right appear-stagger stagger-1"
     >
       {colours.map((data) => (

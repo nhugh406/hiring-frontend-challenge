@@ -52,7 +52,7 @@ function ColourCard({
           <div>{numVotes} votes</div>
         </div>
       </div>
-      <div className="color-block">
+      <div className="colorBlock">
         {colors.map((col) => (
           <div style={{ background: `#${col}` }} key={col}></div>
         ))}
