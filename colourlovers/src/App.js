@@ -33,10 +33,10 @@ const App = () => {
   }, []);
   return (
     <div className="wrapper">
-      <XyzTransition appear xyz="fade rotate-right">
-        {!loading ? (
-          <div className="main">
-            <Header ref={timeUpdater} />
+      <div className="main">
+        <Header ref={timeUpdater} />
+        <XyzTransitionGroup xyz="fade">
+          {!loading ? (
             <XyzTransitionGroup
               appearVisible
               className="card-section"
@@ -48,13 +48,14 @@ const App = () => {
                 </div>
               ))}
             </XyzTransitionGroup>
-          </div>
-        ) : (
-          <div className="loader">
-            <Loader type="Puff" color="#00BFFF" height={150} width={150} />
-          </div>
-        )}
-      </XyzTransition>
+          ) : (
+            <div className="loader" key="loader">
+              <Loader type="Puff" color="#00BFFF" height={150} width={150} />
+              <h2>Loading</h2>
+            </div>
+          )}
+        </XyzTransitionGroup>
+      </div>
     </div>
   );
 };
