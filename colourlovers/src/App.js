@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './styles/App.scss';
 import '@animxyz/core';
-import { XyzTransition, XyzTransitionGroup } from '@animxyz/react';
-import Loader from 'react-loader-spinner';
+import { XyzTransitionGroup } from '@animxyz/react';
+import ColourArea from './components/ColourArea';
+import Loading from './components/Loading';
 
 import Header from './components/MainHeader/Header';
-import ColourCard from './components/ColourFamily/ColourCard';
 
 const App = () => {
   const [colours, setColours] = useState([]);
@@ -15,8 +15,8 @@ const App = () => {
     fetch('https://www.colourlovers.com/api/palettes/top?format=json')
       .then((response) => response.json())
       .then((data) => {
-        setLoading(false);
         setColours(data);
+        setLoading(false);
         timeUpdater.current.updateData();
       });
   };
@@ -36,23 +36,15 @@ const App = () => {
       <div className="main">
         <Header ref={timeUpdater} />
         <XyzTransitionGroup xyz="fade">
-          {!loading ? (
-            <XyzTransitionGroup
-              appearVisible
-              className="card-section"
-              xyz="fade small out-down out-rotate-right appear-stagger stagger-1"
-            >
-              {colours.map((data) => (
-                <div key={data.id}>
-                  <ColourCard {...data} />
-                </div>
-              ))}
-            </XyzTransitionGroup>
+          {loading ? (
+            <Loading
+              overlay
+              textDescription="Loading"
+              height={150}
+              width={150}
+            />
           ) : (
-            <div className="loader" key="loader">
-              <Loader type="Puff" color="#00BFFF" height={150} width={150} />
-              <h2>Loading</h2>
-            </div>
+            <ColourArea colours={colours} />
           )}
         </XyzTransitionGroup>
       </div>
